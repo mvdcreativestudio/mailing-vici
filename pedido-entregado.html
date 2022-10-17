@@ -1,0 +1,564 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+<!-- ESTILOS  -->
+
+<style>
+* {
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0px!important;
+    padding: 0px!important;
+}
+
+/* Fonts */
+:root {
+    font-family: Montserrat;
+  }
+
+
+/* Colors */
+  :root {
+    --color-default: #1d1d1f;
+    --color-primary: #04a0ee;
+    --color-secondary: #2e5092;
+  }
+
+/* Contenedor */
+
+.container {    
+    background-color: #ebebeb;
+    padding: 1rem 3rem;
+    width: 50%;
+}
+
+/* Estilos */
+
+h1 {
+    color: var(--color-default)
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: .1rem;
+}
+
+.primerTitulo {
+    margin-top: 30px;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-top: .1rem;
+}
+
+.logoLocal {
+    width: 70px;
+    float: left;
+}
+
+.contenedorImagenLocal {
+    padding: 20px 0px 0px 0px;
+    width: 85px;
+}
+
+.contenedorNombreLocal {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nombreLocal {
+    float: left;
+    padding-top: 0px;
+    padding: 0px;
+}
+
+.contenedorTabla {
+    width: 50%;
+}
+
+.contenedorDireccionLocal {
+    margin: 0px;
+    padding: 0px;
+}
+
+.direccionLocal {
+    font-weight: 400;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+.horaPedido {
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0px;
+    padding: 5px 0px 0px 0px; 
+}
+
+.calificarPedido {
+    float: left;
+    font-size: 13;
+    margin-top: 5px!important;
+    text-decoration: underline;
+}
+
+.separador {
+    border-bottom: solid 1px #414142;
+    width: 100%;
+    margin: 40px auto;
+}
+
+/* Productos */
+
+.imagenProducto {
+    width: 70px;
+    float: left;
+}
+
+
+.contenedorImagenProducto {
+    padding: 0px;
+    width: 85px;
+}
+
+
+.nombreProducto {
+    float: left;
+    vertical-align: center;
+
+}
+
+.tituloSeccion {
+    margin-bottom: 30px;
+}
+
+
+
+.contenedorDescripcionProducto {
+    margin: 0px;
+    padding: 0px;
+}
+
+.descripcionProducto {
+    font-weight: 400;
+    text-align: left;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.precioProducto {
+    font-weight: 700;
+    text-align: right;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+
+/* Resumen */
+
+.textoResumen {
+    font-weight: 600;
+    float: left;
+}
+
+.enlaceVerResumen {
+    float: right;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Detalle de la orden */
+
+.detalleDelCargo {
+    font-weight: 500;
+    float: left;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.totalDelCargo {
+    font-weight: 600;
+    float: right;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.totalPagado {
+    font-weight: 500;
+    float: left;
+    font-size: 15px;
+    padding-top: 40px;
+}
+
+.cifraTotalPagado {
+    padding-top: 40px;
+    font-weight: 600;
+    float: right;
+    font-size: 18px;
+}
+
+/* Tablas */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 3px solid purple; */
+  }
+
+
+
+/* Footer */
+
+.footer {
+    text-align: center;
+}
+
+.logoFooter {
+    max-width: 200px;
+    
+}
+
+.sloganTop {
+    margin-top: 10px!important;
+}
+
+.sloganBottom {
+    font-weight: 600;
+}
+
+.logoRedes {
+    width: 30px;
+    margin: 10px;
+}
+
+.contenedorEnlaces {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.contenedorAnuncioDePrivacidad {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+/* Calificación */
+
+label { 
+    color:grey;
+}
+
+input[type = "radio"] { 
+    display:none;
+}
+
+.clasificacion{
+      direction: rtl;/* right to left */
+      unicode-bidi: bidi-override;/* bidi de bidireccional */
+}
+
+label:hover {
+    color:orange;
+}
+
+label:hover ~ label {
+    color:orange;
+}
+
+input[type = "radio"]:checked ~ label {
+    color:orange;
+}
+
+#form {
+  width: 100%!important;
+  margin: 0 auto;
+  height: auto;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+  font-size: 50;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+.contenedorCalificacion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+</style>
+
+<!-- FIN ESTILOS  -->
+
+
+
+<html>
+    <body>
+        <div class="container">
+            <div>
+                <h1 id="estadoPedido" class="titulo">Pedido Entregado</h1>
+                <p class="subtitulo">Gracias por tu pedido en Vici</p>
+            </div>   
+
+            <!-- TU PEDIDO  -->
+
+            <div>
+                <h3 class="tituloSeccion primerTitulo">Tu Pedido</h3>
+                <div class="contenedorTabla">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th class="contenedorImagenLocal">
+                                    <img class="logoLocal" src="./assets/img/grido-logo.png" alt="">
+                                </th>
+                                <th class="contenedorNombreLocal">
+                                    <h4 class="nombreLocal">Grido - Tres Arroyos</h4>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th class="contenedorDireccionLocal">
+                                    <p class="direccionLocal">Av. San Juan 3400</p>
+                                    <p class="horaPedido">16/10/2022 - 21:10hs.</p>
+                                    <a id="calificar" href=""><p class="calificarPedido">Calificar</p></a>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                
+            </div>
+
+            <!-- SEPARADOR -->
+        
+            <div class="separador"></div>
+
+            <!-- PRODUCTOS -->
+        
+            <div>
+                <h3 class="tituloSeccion">Productos</h3>
+                <table>
+                    <tbody>
+                        <div class="contenedorTablaProducto">
+                            <tr>
+                                <th class="contenedorImagenProducto">
+                                    <img class="imagenProducto" src="./assets/img/grido-logo.png" alt="">
+                                </th>
+                                <th class="contenedorNombreProducto">
+                                    <h5 class="nombreProducto">1 Kg Helado</h5>
+                                    <br>
+                                    <p class="descripcionProducto">Dulce de Leche, Vainilla, Crema Tramontana</p>
+                                </th>
+                                <th class="contenedorPrecioProducto">
+                                    <p class="precioProducto">$2980</p>
+                                </th>
+                            </tr>
+                        </div>
+
+                        <div class="contenedorTablaProducto">
+                            <tr>
+                                <th class="contenedorImagenProducto">
+                                    <img class="imagenProducto" src="./assets/img/grido-logo.png" alt="">
+                                </th>
+                                <th class="contenedorNombreProducto">
+                                    <h5 class="nombreProducto">1 Kg Helado</h5>
+                                    <br>
+                                    <p class="descripcionProducto">Dulce de Leche, Vainilla, Crema Tramontana</p>
+                                </th>
+                                <th class="contenedorPrecioProducto">
+                                    <p class="precioProducto">$2980</p>
+                                </th>
+                            </tr>
+                        </div>
+
+                        <div class="contenedorTablaProducto">
+                            <tr>
+                                <th class="contenedorImagenProducto">
+                                    <img class="imagenProducto" src="./assets/img/grido-logo.png" alt="">
+                                </th>
+                                <th class="contenedorNombreProducto">
+                                    <h5 class="nombreProducto">1 Kg Helado</h5>
+                                    <br>
+                                    <p class="descripcionProducto">Dulce de Leche, Vainilla, Crema Tramontana</p>
+                                </th>
+                                <th class="contenedorPrecioProducto">
+                                    <p class="precioProducto">$2980</p>
+                                </th>
+                            </tr>
+                        </div>
+                    </tbody>
+                </table>
+                
+            </div>
+
+            <!-- SEPARADOR -->
+        
+            <div class="separador"></div>
+
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th class="contenedorResumen">
+                                <h4 class="textoResumen">Resumen</h4>
+                            </th>
+                            <th class="enlaceVerResumen">Ver Resumen</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- SEPARADOR -->
+        
+            <div class="separador"></div>
+
+            <!-- DETALLE DE LA ORDEN -->
+
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th class="detalleDelCargo">1Kg de Helado</th>
+                            <th class="totalDelCargo">$2980</th>
+                        </tr>
+                        <tr>
+                            <th class="detalleDelCargo">1Kg de Helado</th>
+                            <th class="totalDelCargo">$2980</th>
+                        </tr>
+                        <tr>
+                            <th class="detalleDelCargo">1Kg de Helado</th>
+                            <th class="totalDelCargo">$2980</th>
+                        </tr>
+                        <tr>
+                            <th class="detalleDelCargo">Envío</th>
+                            <th class="totalDelCargo">$200</th>
+                        </tr>
+                        <tr>
+                            <th class="detalleDelCargo">Cargo por administración</th>
+                            <th class="totalDelCargo">$200</th>
+                        </tr>
+                        <tr>
+                            <th class="totalPagado">Total Pagado</th>
+                            <th class="cifraTotalPagado">$9340</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- SEPARADOR -->
+        
+            <div class="separador"></div>    
+
+            <div class="contenedorCalificacion">
+                <h4>Calificar Pedido</h4>
+                <form>
+                    <p class="clasificacion">
+                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                      --><label for="radio1">★</label><!--
+                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                      --><label for="radio2">★</label><!--
+                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                      --><label for="radio3">★</label><!--
+                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                </form>
+            </div>
+
+            <!-- Footer -->
+
+            <div class="footer">
+                <img class="logoFooter" src="./assets/img/logo-vici.png" alt="">
+                <p class="sloganTop">La app de delivery</p>
+                <p class="sloganBottom">del Interior</p>
+
+                <!-- SEPARADOR -->
+        
+                <div class="separador"></div>
+
+                <!-- Redes Sociales -->
+
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <img class="logoRedes" src="./assets/img/logo-facebook.png" alt="">
+                            </tr>
+                            <tr>
+                                <img class="logoRedes" src="./assets/img/logo-instagram.png" alt="">
+                            </tr>
+                            <tr>
+                                <img class="logoRedes" src="./assets/img/logo-twitter.png" alt="">
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="contenedorEnlaces">
+                    <p>Centro de ayuda</p>
+                    <p>Aviso de privacidad</p>
+                    <p>Términos y condiciones</p>
+                    <p>Iniciar reclamo</p>
+                    <p>Cancelar suscripcion</p>
+                </div>
+
+                <div class="contenedorAnuncioDePrivacidad">
+                    <p>Recibiste este correo porque eres usuario de VICI - Todos los Derechos Reservados</p>
+                </div>
+
+
+
+
+            </div>
+
+              
+
+            
+
+
+        </div>
+    </body>
+</html>
